@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&family=Ubuntu:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*border: 1px solid red;*/
+}
+
+:root {
+  --colorPrincipal: #304c89;
+  --colorSecundario: #9eb7e5;
+  --colorTerciario: #e8e5da;
+  --bold: 700;
+  --regular: 400;
+}
+
+.logo {
+  padding-left: 2rem;
+  height: 100px;
+}
+
+body {
+  width: 100vw;
+  max-width: 100%;
+  font-family: "ubuntu", sans-serif;
+  background-color: var(--colorPrincipal);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  background-color: var(--colorSecundario);
+  padding: 1rem 1rem 1rem 1rem;
+}
+.nav-list {
+  display: flex;
+  padding-right: 2rem;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.nav-link {
+  color: var(--colorPrincipal);
+}
+.nav-list i {
+  font-size: 2rem;
+  color: var(--colorPrincipal);
+  cursor: pointer;
+}
+.container-items {
+  order: 1;
+  width: 100%;
+}
+
+.nav-item {
+  width: 100%;
+  text-align: end;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  display: none;
+}
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle:checked ~ .nav-item {
+  display: block;
+}
+.inicio-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.about-container h2 {
+  font-weight: var(--bold);
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+.about-container p {
+  font-size: 1rem;
+  font-weight: var(--regular);
+  color: white;
+  text-align: justify;
+  padding: 1rem;
+  max-width: 350px;
+}
+.imagen-inn {
+  width: 100%;
+  margin: 0.5rem auto;
+  height: auto;
+}
+
+.btn {
+  border: 2px solid white;
+  color: var(--colorPrincipal);
+  background: var(--colorSecundario);
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  margin: 0 20px;
+  font-weight: var(--bold);
+}
+
+.btn:hover {
+  background: white;
+}
+
+.text-btns {
+  margin-top: 2rem;
+}
+
+.ventajas-section {
+  background-color: var(--colorTerciario);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ventajas-section h2 {
+  color: var(--colorPrincipal);
+  font-size: 2rem;
+  text-align: center;
+  font-weight: var(--bold);
+  padding: 1rem 0;
+}
+
+.ventajas-section p {
+  text-align: justify;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  max-width: 350px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card h3 {
+  color: var(--colorPrincipal);
+}
+.card i {
+  font-size: 3rem;
+  color: var(--colorPrincipal);
+  margin-bottom: 1rem;
+}
+.como-trabajamos-section {
+  background: var(--colorPrincipal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.como-trabajamos-section h2 {
+  padding: 1rem 0;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: var(--bold);
+  padding-bottom: 1rem;
+}
+
+.como-trabajamos-section p {
+  color: white;
+  text-align: justify;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  max-width: 350px;
+}
+
+.card-pasos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-pasos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-pasos h3 {
+  color: white;
+}
+
+.card-pasos i {
+  font-size: 3 rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.num-icon {
+  width: 75px;
+  height: auto;
+  padding-bottom: 1rem;
+}
+
+.our-clients {
+  background-color: white;
+}
+
+.card-clientes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.our-clients h2 {
+  font-weight: var(--bold);
+  font-size: 2rem;
+  color: var(--colorPrincipal);
+  text-align: center;
+  padding: 1rem;
+}
+
+.our-clients p{
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+
+}
+.card-clientes img{
+  height: 100px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 0.3rem;
+  background-color: var(--colorSecundario);
+}
+footer h2 {
+  align-self: flex-start;
+  color: var(--colorPrincipal);
+}
+.direccion h3{
+  font-size: 1rem;
+  padding: 5px;
+  color: var(--colorPrincipal);
+}
+.direccion p{
+  color: white;
+}
+.locaciones {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 10px;
+
+}
+
+.foot-img img{
+  height: 150px;
+  max-width: 100%;
+  display: none;
+}
+
+/* Mediaqueri Desktop*/
+@media (min-width: 1024px) {
+  /*menu*/
+  header {
+    height: 100px;
+  }
+  .logo {
+    height: 70px;
+  }
+  .nav-link {
+    color: black;
+    font-size: 1.1rem;
+  }
+ .nav-link:hover {
+  color: white;
+ }
+
+
+  .nav-list {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .nav-item {
+    display: flex;
+    width: auto;
+  }
+
+  .container-items {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .btn-container {
+    display: none;
+  }
+
+  .inicio-section {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .imagen-inn {
+    width: 550px;
+    margin: 0.5rem auto;
+    height: auto;
+  }
+
+  .ventajas-section p {
+    max-width: fit-content;
+  }
+  .card-container {
+    height: 350px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+  .card {
+    width: 300px;
+  }
+  .como-trabajamos-section p {
+    max-width: fit-content;
+  }
+  .card-pasos-container {
+    height: 350px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+  .card-pasos {
+    width: 300px;
+  }
+  .card-clientes-container{
+    flex-direction: row;
+    padding: 2rem 0 2rem 0;
+    justify-content: space-around;
+  }
+  footer {
+    height: 200px;
+    padding: 2rem;
+  }
+
+  .foot-img img {
+    display: block;
+    
+  }
+}
